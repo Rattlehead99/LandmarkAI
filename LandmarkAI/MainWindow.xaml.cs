@@ -92,7 +92,10 @@ namespace LandmarkAI
 
                     //T65. Deserializing JSON
                     // Add the NewtonSoft.Json nuget
-                    IList<Prediction> predictions = (JsonConvert.DeserializeObject<CustomVision>(responseString)).Predictions;
+                    IList<Prediction> predictions = (JsonConvert.DeserializeObject<CustomVision>(responseString)).Predictions;//=>(T66.)
+
+                    //T66. Displaying the result in a GridView
+                    PredictionListView.ItemsSource = predictions;
                 }
             }
         }
