@@ -29,7 +29,7 @@
                                     DisplayMemberBinding="{Binding TagName}" />
                     <GridViewColumn Header="Probability"
                                     Width="100"
-                                    DisplayMemberBinding="{Binding Path=Probability, StringFormat=P2}" />
+                                    DisplayMemberBinding="{Binding Path=Probability}" />
                 </GridView>
             </ListView.View>
         </ListView>
